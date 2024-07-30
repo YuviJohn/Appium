@@ -163,7 +163,5 @@ public class loginpage {
 		}
 	}
 	
-	public static void dummy() {
-		
-	}
+	
 }
