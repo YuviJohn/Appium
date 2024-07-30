@@ -53,7 +53,7 @@ public class loginpage {
 	
 	public static void ExplicitWait(WebDriver driver, int Seconds, WebElement element) {
 		
-		WebDriverWait wait = new WebDriverWait(Seconds, driver); 
+		WebDriverWait wait = new WebDriverWait(driver, Seconds); 
 		wait.until(ExpectedConditions.visibilityOf(element));
 		
 	}
@@ -136,7 +136,7 @@ public class loginpage {
 		
 		hoverAccountList(driver);
 		clickStartHere(driver);
-		Thread.sleep(25);
+//		Thread.sleep(25);
 		implicitwait(driver, 20);
 		signin.validateSigninTitle(driver);
 	}
@@ -163,4 +163,7 @@ public class loginpage {
 		}
 	}
 	
+	public static void dummy() {
+		
+	}
 }
